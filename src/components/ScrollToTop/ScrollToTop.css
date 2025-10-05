@@ -1,0 +1,48 @@
+.scroll-to-top-button {
+    /* Fixed positioning in the bottom right corner */
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    
+    /* Styling */
+    background: var(--color-primary); /* Use your theme's primary color */
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center; /* Center the icon */
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 99; /* Ensure it's above other content */
+    
+    /* Initial state: hidden */
+    opacity: 0;
+    visibility: hidden;
+    
+    /* Smooth transition for showing/hiding */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Class added by React when scrolling down */
+.scroll-to-top-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Optional: Hover effect */
+.scroll-to-top-button:hover {
+    background: var(--color-primary-varient);
+    transform: translateY(-3px);
+}
+
+/* MEDIA QUERY: Adjust position for small screens */
+@media screen and (max-width: 600px) {
+    .scroll-to-top-button {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+        font-size: 1rem;
+    }
+}
