@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import "./About.css";
 // NOTE: Make sure to initialize AOS in your main App file (e.g., App.js)
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
