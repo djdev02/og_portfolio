@@ -3,7 +3,7 @@ import "./about.css";
 // NOTE: Make sure to initialize AOS in your main App file (e.g., App.js)
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
-import ME from "../../assets/img/me-ab.jpg";
+// import ME from "../../assets/img/me-ab.jpg";
 import ME2 from "../../assets/img/Gemini_Generated_Image_818o7s818o7s818o.png";
 
 import { FaAward } from "react-icons/fa";
