@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: block;
@@ -14,6 +15,17 @@ nav {
   backdrop-filter: blur(15px);
 }
 
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
 nav a {
   background: transparent;
   padding: 0.9rem;
